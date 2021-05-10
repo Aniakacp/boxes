@@ -1,0 +1,26 @@
+h3 {
+  color:green;
+            }
+
+input[type="number"] {
+  text-align: -moz-right;
+  -moz-appearance: textfield;
+            }
+
+label.form-group-label{
+  display: block;
+  text-align:center;
+}
+
+.tooltip-inner {
+    border: solid 1px #ccc;
+}
+div.content {
+  width: 68%;
+  margin: 0 4% 0 4%
+}
+
+div.left {
+  width: 20%;
+  padding: 0 0 0 5%;
+  float: left}

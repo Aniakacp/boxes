@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wybor</title>
+</head>
+<body>
+
+{{ bmical }}
+
+<form method="POST">
+    {% csrf_token %}
+       <label for="calories">Kalorycznosc:</label>
+          <select name="calories" id="calories">
+              <option value="850">850</option>
+              <option value="1000">1000</option>
+              <option value="1150">1200</option>
+              <option value="1200">1250</option>
+              <option value="1250">1300</option>
+              <option value="1400">1350</option>
+              <option value="1400">1400</option>
+              <option value="1400">1450</option>
+              <option value="1400">1500</option>
+              <option value="1400">1550</option>
+
+       <br>
+    <input type="submit" value="Wybierz">
+</select>
+</form>
+<ul>
+{% for dieta in result %}
+    <li>{{ dieta.dieta }}</li>
+{%  endfor %}
+</ul>
+</body>
+</html>
