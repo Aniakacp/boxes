@@ -2,6 +2,7 @@ from django.db import models
 
 class Firma(models.Model):
     firma=models.CharField(max_length=100)
+    url= models.CharField(max_length=100)
 
     def __str__(self):
         return f'{self.firma}'

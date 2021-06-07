@@ -212,16 +212,14 @@
   <tbody>
 {% for dieta in result  %}
     <tr>
-      <th scope="row" >{{ dieta.id }}</th>
+        <th scope="row" >{{ dieta.id }}</th>
         <td >{{ dieta.dieta }}</td>
         <td >{{ dieta.firma }}</td>
         <td  style="color:red;">{{ dieta.kalorycznosc }}</td>
         <td >{{ dieta.cena }}</td>
         <td >{{ dieta.ilosc_posilkow }}</td>
-        {% if dieta.firma == 'Firma object (3)' %}
-            jdshfgjdsf
-           <td> <input type="button" value="Go to diet" onclick="location.href='https://bodychief.pl/'"> </td>
-        {% endif %}
+        <td> <input type="button" value="Go to diet" onclick="location.href='{{ dieta.firma.url }}'"> </td>
+
         <!--<td> <input type="button" value="Go to diet" onclick="location.href='/box-list/mommy/'"> </td>-->
     </tr>
 {%  endfor %}
